@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$m_g68k+=pl90al3yzyhhehb-aj!7xk3$6j7330jq8_u_@z-q8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'eu.pythonanywhere.com']
 
 
 # Application definition
@@ -123,3 +123,6 @@ STATIC_ROOT = BASE_DIR / 'static'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Line below is for when the login page is accessed directly, it will redirect a successful login to the top-level index (the homepage of our blog).
+LOGIN_REDIRECT_URL = '/'
